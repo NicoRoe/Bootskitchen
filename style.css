@@ -1,0 +1,87 @@
+* {
+    font-family: 'Playfair Display';
+}
+
+/* Nav bar */
+
+.logo {
+    border-radius: 50%;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* backgroud pic in header */
+.container-background {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.container-background::before {
+    width: 100%;
+    height: 50vh;
+    content: "";
+    background-size: cover;
+    background-image: url("scr/backgroundHeader.jpg");
+    opacity: 0.6;
+    position: absolute;
+    background-position: center;
+
+}
+
+.titleHeader, .textHeader {
+    margin-top: 3%;
+    z-index: 1;
+    color: #030303;
+    text-align: center;
+
+}
+.titleHeader{
+    font-size: 5vh;
+}
+.textHeader {
+    font-size: 2vh;
+    width: 70%;
+}
+
+
+/* search bar */
+.container-background nav {
+    border-radius: 15px;
+    width: 40%;
+    
+    
+}
+
+/* .container-background nav::after {
+    content: " ";
+    opacity: 0.5;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%; */
+
+
+
+
+.container-fluid {
+    width: 100%;
+    
+}
+
+.d-flex {
+    width: 100%;
+    }

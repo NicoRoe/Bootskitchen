@@ -20,42 +20,45 @@
 
 </head>
 
-<body>
-  <header>
-    <!-- Nav beginns von Bootstrap-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navHeader">
-      <div class="container">
-        <img class="logo" src="scr/logo.png" alt="logo">
-        <a class="navbar-brand" href="#">SPOON.DE</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Frühstück</a>
-            <a class="nav-link" href="#">Mittag</a>
-            <a class="nav-link" href="#">Abend</a>
-            <a class="nav-link" href="#">Hauptgerichte</a>
-            <a class="nav-link" href="#">Dessert</a>
-            <a class="nav-link" href="#">Snack</a>
-            <a class="nav-link" href="#">Getränke</a>
-          </div>
+<body> <!-- Nav beginns von Bootstrap-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navHeader">
+    <div class="container">
+      <img class="logo" src="scr/logo.png" alt="logo">
+      <a class="navbar-brand" href="#">SPOON.DE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" id="headerLink">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Frühstück</a>
+          <a class="nav-link" href="#">Mittag</a>
+          <a class="nav-link" href="#">Abend</a>
+          <a class="nav-link" href="#">Hauptgerichte</a>
+          <a class="nav-link" href="#">Dessert</a>
+          <a class="nav-link" href="#">Snack</a>
+          <a class="nav-link" href="#">Getränke</a>
         </div>
       </div>
-    </nav>
-    <!-- Nav ends -->
+    </div>
+  </nav>
+  <!-- Nav ends -->
+
+  <header>
+
     <div class="container-background">
 
       <h1 class="titleHeader">Suche in 1081 Rezepten auf <br>SPOON.de</h1>
-      <h3 class="textHeader">Entdecken Sie unsere vielen leckeren Rezepte, die einfach & schnell zuzubereiten sind. Stöbern Sie in unserer
+      <h3 class="textHeader">Entdecken Sie unsere vielen leckeren Rezepte, die einfach & schnell zuzubereiten sind.
+        Stöbern Sie in unserer
         Rezeptwelt von SPOON.de. Probieren Sie etwas Neues aus! Viel Spaß beim Nachkochen!</h3>
 
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Rezepte nach Zutat, Gericht oder Stichwort suchen" aria-label="Search">
+            <input class="form-control me-2" type="search"
+              placeholder="Rezepte nach Zutat, Gericht oder Stichwort suchen" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
@@ -89,7 +92,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+  <script>
+    const navbar = document.getElementById("navHeader");
+    const navTexts = document.querySelectorAll("#headerLink a");
+    window.onscroll = () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add("changeColor");
+        navTexts.forEach(element => {
+          element.classList.add("changeColor");
+        });
+      } else {
+        navbar.classList.remove("changeColor");
+        navTexts.forEach(element => {
+          element.classList.remove("changeColor");
+        });
+      }
+    }
 
+
+
+  </script>
 </body>
 
 </html>

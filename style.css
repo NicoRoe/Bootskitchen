@@ -5,9 +5,14 @@
 /* Nav bar */
 
 #navHeader {
-    position: sticky;
-    top: 0;
     padding-left: 7%;
+    height: 12vh;
+    
+}
+
+#navHeader.changeColor{
+    background-color: #e0c3b2 !important;
+
 }
 
 .logo {
@@ -24,9 +29,17 @@
     justify-content: space-around;
 
 }
+#headerLink a{
+    color: #e0af93;
+}
+
+#headerLink a.changeColor{
+    color: aliceblue;
+}
 
 /* backgroud pic in header */
 .container-background {
+    margin-top: 12vh;
     width: 100%;
     height: 51vh;
     display: flex;

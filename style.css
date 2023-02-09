@@ -1,11 +1,32 @@
-#black{
-    background-color: rgb(50, 50, 50);
-    height: 100%;
+body{
+    position: relative;
+    height: 100vh;
+}
+
+/* @media (max-width: 576px) {
+    #background {
+        height: 32vh;
+    }
+} */
+
+
+#background {
+    border: 5px solid red;
+    background-color: rgb(67, 67, 67);
+    height: 32vh;
+    width: 100%;
+    margin-top: 15vh;
+    bottom: 0;
+    /* position: absolute; */
+}
+
+.btn {
+    margin: 6vh;
 }
 
 /* hr{
     width: 33%;
     color: rgb(0, 129, 32);
     height: 15px;
-    
+
 } */

@@ -1,32 +1,185 @@
-body{
-    position: relative;
-    height: 100vh;
+
+
+
+
+* {
+    font-family: 'Playfair Display';
 }
 
-/* @media (max-width: 576px) {
-    #background {
-        height: 32vh;
-    }
-} */
+/* Nav bar */
 
+#navHeader {
+    padding-left: 7%;
+    height: 12vh;
+
+}
+
+#navHeader.changeColor {
+    background-color: #e0c3b2 !important;
+
+}
+
+.logo {
+    border-radius: 50%;
+    padding: 1vh;
+    width: 11vh;
+    height: 11vh;
+
+}
+
+.navbar-nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#headerLink a {
+    color: #e0af93;
+}
+
+#headerLink a.changeColor {
+    color: aliceblue;
+}
+
+/* backgroud pic in header */
+.container-background {
+    margin-top: 12vh;
+    width: 100%;
+    height: 51vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.container-background::before {
+    width: 100%;
+    height: 50vh;
+    content: "";
+    background-size: cover;
+    background-image: url("scr/backgroundHeader.jpg");
+    opacity: 0.6;
+    position: absolute;
+    background-position: center;
+
+}
+
+.titleHeader, .textHeader {
+    margin-top: 3%;
+    z-index: 1;
+    color: #030303;
+    text-align: center;
+
+}
+
+.titleHeader {
+    font-size: 5vh;
+}
+
+.textHeader {
+    font-size: 2vh;
+    width: 70%;
+}
+
+
+/* search bar */
+
+.container-fluid {
+    /* width: 50vw; */
+
+}
+
+.d-flex {
+    width: 50vw;
+}
+
+#searchbar {
+    border-radius: 15px;
+    width: 50vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#searchInput {
+    height: 5vh;
+
+}
+/* button search */
+#buttonInBild {
+    /* text-align: center; */
+    height: 4.5vh;
+    font-size: 2vh;
+    /* vertical-align: middle; */
+}
+
+
+/* Universelle CSS-Regeln für alle Monitore */
+
+@media screen and (min-width:450px) {
+
+    /* Bei jedem größeren Monitor kommen neue Regeln hinzu */
+    .titleHeader {
+        font-size: 3vh;
+    }
+
+    .textHeader {
+        font-size: 1.5vh;
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width:720px) {
+
+    .titleHeader {
+        font-size: 4vh;
+    }
+
+    .textHeader {
+        font-size: 1.8vh;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1220px) {
+
+    .titleHeader {
+        font-size: 5vh;
+    }
+
+    .textHeader {
+        font-size: 2vh;
+        width: 70%;
+    }
+
+.d-flex {
+    width: 50vw;
+    }
+
+
+
+
+    /* -------------------start-Nico-css--------------------------------- */
+     /* -------------------start-Nico-css--------------------------------- */
+      /* -------------------start-Nico-css--------------------------------- */
 
 #background {
-    border: 5px solid red;
+    
     background-color: rgb(67, 67, 67);
     height: 32vh;
-    width: 100%;
+    
+    /*width: 100%;
     margin-top: 15vh;
     bottom: 0;
-    /* position: absolute; */
+    position: absolute;*/
 }
 
 .btn {
     margin: 6vh;
 }
 
-/* hr{
-    width: 33%;
-    color: rgb(0, 129, 32);
-    height: 15px;
-
-} */

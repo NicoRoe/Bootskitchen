@@ -154,6 +154,38 @@
     }
 
 .d-flex {
+    width: 100%;
+    }
+
+
+/*  main Unterteilungen :):)*/
+
+
+.png-time {
+    height: 1vh;
+    width: auto;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-family: sans-serif;
+    color: black;
+    
+}
+
+.card-text {
+    font-family: sans-serif;
+    color: black;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
     width: 50vw;
     }
 
@@ -168,10 +200,10 @@
     
     background-color: rgb(67, 67, 67);
     height: 32vh;
-    
     /*width: 100%;
     margin-top: 15vh;
     bottom: 0;
     position: absolute;*/
+
 }
 

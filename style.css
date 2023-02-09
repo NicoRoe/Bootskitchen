@@ -85,3 +85,36 @@
 .d-flex {
     width: 100%;
     }
+
+
+/*  main Unterteilungen */
+
+
+.png-time {
+    height: 1vh;
+    width: auto;
+}
+
+.card-img-top {
+    height: 30vh;
+    width: ;
+    object-fit: contain;
+}
+
+.card-title {
+    font-family: sans-serif;
+    color: black;
+    
+}
+
+.card-text {
+    font-family: sans-serif;
+    color: black;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+

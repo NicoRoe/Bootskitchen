@@ -96,8 +96,7 @@
 }
 
 .card-img-top {
-    height: 30vh;
-    width: ;
+    height: 180px;
     object-fit: contain;
 }
 

@@ -86,10 +86,6 @@
 
 /* search bar */
 
-.container-fluid {
-    /* width: 50vw; */
-
-}
 
 .d-flex {
     width: 50vw;
@@ -103,17 +99,17 @@
     align-items: center;
     justify-content: center;
 
-}
+} 
 
 #searchInput {
     height: 5vh;
 
-}
+} 
 /* button search */
 #buttonInBild {
     /* text-align: center; */
-    height: 4.5vh;
-    font-size: 2vh;
+    /* height: 4.5vh;
+    font-size: 2vh; */
     /* vertical-align: middle; */
 }
 
@@ -161,7 +157,7 @@
     width: 50vw;
     }
 
-
+}
 
 
     /* -------------------start-Nico-css--------------------------------- */
@@ -177,9 +173,5 @@
     margin-top: 15vh;
     bottom: 0;
     position: absolute;*/
-}
-
-.btn {
-    margin: 6vh;
 }
 

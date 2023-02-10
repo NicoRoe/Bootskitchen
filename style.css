@@ -1,9 +1,5 @@
-
-
-
-
 * {
-    font-family: 'Playfair Display';
+    font-family: sans-serif;
 }
 
 /* Nav bar */
@@ -98,21 +94,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 } 
 
 #searchInput {
     height: 5vh;
-
 } 
 /* button search */
-#buttonInBild {
-    /* text-align: center; */
-    /* height: 4.5vh;
-    font-size: 2vh; */
-    /* vertical-align: middle; */
-}
-
 
 /* Universelle CSS-Regeln für alle Monitore */
 
@@ -144,11 +131,11 @@
 
 @media screen and (min-width:1220px) {
 
-    .titleHeader {
+.titleHeader {
         font-size: 5vh;
     }
 
-    .textHeader {
+.textHeader {
         font-size: 2vh;
         width: 70%;
     }
@@ -159,11 +146,10 @@
 
 
 /*  main Unterteilungen :):)*/
-
-
-
-
-
+#Rezepte {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
 
 .card-title {
     font-family: sans-serif;
@@ -171,15 +157,10 @@
     
 }
 
-.card-text {
+#card-text {
     font-family: sans-serif;
     color: black;
 }
-
-
-
-
-
 
 
     /* -------------------start-Nico-css--------------------------------- */
@@ -187,13 +168,22 @@
       /* -------------------start-Nico-css--------------------------------- */
 
 #background {
-    
     background-color: rgb(67, 67, 67);
     height: 32vh;
     /*width: 100%;
     margin-top: 15vh;
     bottom: 0;
-    position: absolute;*/
-
+    position: absolute; :)*/
 }
 
+#firsttitle {
+    margin-bottom: 5%;
+}
+
+.footerMargin {
+    margin-bottom: 5%;
+}
+
+.form-label {
+    color: white;
+}

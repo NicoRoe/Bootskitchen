@@ -3,14 +3,22 @@
 }
 
 /* Nav bar */
-
-#navHeader {
-    padding-left: 7%;
-    height: 12vh;
-
+#navContainer {
+    --bs-gutter-x: 0 !important;
 }
 
-#navHeader.changeColor {
+#navHeader {
+
+    height: 12vh;
+    /* border: solid; */
+    /* background-color: rgb(249, 251, 252); */
+}
+
+#navHeader, #navbarNavAltMarkup {
+    background-color: antiquewhite !important;
+}
+
+#navHeader.changeColor, #navbarNavAltMarkup.changeColor {
     background-color: #e0c3b2 !important;
 
 }
@@ -24,14 +32,22 @@
 }
 
 .navbar-nav {
-    width: 90%;
+    width: 100%;
+    margin-left: 0;
     display: flex;
     justify-content: space-around;
+    background-color: antiquewhites !important;
+    /* border: solid red; */
 
 }
 
 #headerLink a {
-    color: #e0af93;
+    color: #070300;
+   
+    font-size: 2vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:rgb(198, 127, 19);
 }
 
 #headerLink a.changeColor {
@@ -63,20 +79,28 @@
 }
 
 .titleHeader, .textHeader {
-    margin-top: 3%;
+    
     z-index: 1;
     color: #030303;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
 
 }
 
 .titleHeader {
+    margin-top: 0;
     font-size: 5vh;
+    font-weight: bold;
+    
 }
 
 .textHeader {
     font-size: 2vh;
     width: 70%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
 }
 
 
@@ -94,56 +118,79 @@
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
 
 #searchInput {
-    height: 5vh;
-} 
+    height: 6vh;
+}
+#buttonInBild {
+    font-size: 2vh;
+}
 /* button search */
 
 /* Universelle CSS-Regeln für alle Monitore */
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:490px) {
 
     /* Bei jedem größeren Monitor kommen neue Regeln hinzu */
     .titleHeader {
-        font-size: 3vh;
+        font-size: 3vh; 
+        margin-top: 15%;
+        
     }
 
     .textHeader {
         font-size: 1.5vh;
         width: 70%;
+       
+    }
+
+    #headerLink a {
+        font-size: 3vw;
     }
 }
 
 
-@media screen and (min-width:720px) {
+@media screen and (min-width:768px) {
 
     .titleHeader {
         font-size: 4vh;
+        margin-top: 8%;
     }
 
     .textHeader {
-        font-size: 1.8vh;
-        width: 70%;
-    }
-}
-
-@media screen and (min-width:1220px) {
-
-.titleHeader {
-        font-size: 5vh;
-    }
-
-.textHeader {
         font-size: 2vh;
         width: 70%;
     }
 
-.d-flex {
-    width: 100%;
+    #headerLink a {
+        font-size: 1em;
+    }
+}
+#logoNav{
+    margin-left: none !important;
+}
+
+@media screen and (min-width:1200px) {
+
+    .titleHeader {
+        font-size: 5vh;
+        margin-top: 4%;
     }
 
+    .textHeader {
+        font-size: 2vh;
+        width: 70%;
+    }
+
+    .d-flex {
+        width: 100%;
+    }
+    #headerLink a {
+        font-size: 1,3em;
+    }
+
+}
 
 /*  main Unterteilungen :):)*/
 #Rezepte {
@@ -154,7 +201,7 @@
 .card-title {
     font-family: sans-serif;
     color: black;
-    
+
 }
 
 #card-text {
@@ -163,9 +210,9 @@
 }
 
 
-    /* -------------------start-Nico-css--------------------------------- */
-     /* -------------------start-Nico-css--------------------------------- */
-      /* -------------------start-Nico-css--------------------------------- */
+/* -------------------start-Nico-css--------------------------------- */
+/* -------------------start-Nico-css--------------------------------- */
+/* -------------------start-Nico-css--------------------------------- */
 
 #background {
     background-color: rgb(67, 67, 67);

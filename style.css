@@ -123,7 +123,9 @@
 #searchInput {
     height: 6vh;
 }
-
+#buttonInBild {
+    font-size: 2vh;
+}
 /* button search */
 
 /* Universelle CSS-Regeln für alle Monitore */
